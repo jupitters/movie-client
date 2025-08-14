@@ -50,7 +50,7 @@ function App() {
         <Route path="/" element={<Layout/>}>
           <Route path='/' element={<Home movies={movies}/>} />
           <Route path="/Trailer/:ytTrailerId" element={<Trailer/>} />
-          <Route path="/Reviews/:movieId" element={<Reviews getMovieData={getMovieData} reviews={reviews} setReviews={setReviews} />} />
+          <Route path="/Reviews/:movieId" element={<Reviews getMovieData={getMovieData} movie={movie} reviews={reviews} setReviews={setReviews} />} />
 
         </Route>
       </Routes>
